@@ -1,27 +1,35 @@
 import java.util.Scanner;
+
 public class Saluda {
 
-	public Saluda() {/*
-**Esto es el metodo porque lleva parentesis 
-*/
-		// TODO Auto-generated constructor stub
-	}
-	
+	private static String nombre = null;
 
-	
- public static void main(String[] args) {
-		 String nombre =null;
-		Scanner sc=new Scanner (System.in);
-		System.out.println("hola humana ¿cómo te llamas?");
+	public static String getNombre() {
+		return nombre;/*
+						 ** metodo get devuelve valos nombre
+						 */
+	}
+
+	public static void setNombre(String nombre) {
+		Saluda.nombre = "Raquel";/*
+									 ** Metodo que asigna un valor para nombre
+									 */
+	}
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("hola humana1 ¿cómo te llamas?");
 		System.out.println("Introduce tu nombre");
+		setNombre(sc.nextLine());
+		System.out.println("Hola ahora  Cris se llama" + " " + getNombre());
+		System.out.println("Hola humana2 ¿y tú cómo te llamas?, introduce tu nombre");
 		nombre=sc.nextLine();
-		System.out.println(nombre);
-		System.out.println("Hola"+" "+nombre);
-		System.out.println("hola humana2 ¿y cómo te llamas?, introduce tu nombre");
-		nombre=sc.nextLine();
-		System.out.println("Hola"+" "+nombre);
-		// TODO Auto-generated method stub
-
-	}
+        System.out.println("Me llamo"+nombre);
+    setNombre(sc.nextLine());
+	System.out.println("Hola ahora la humana2, tambien se llama"+nombre);// TODO Auto-generated method stub
+	setNombre(sc.nextLine());
+	;
 
 }
+	}
