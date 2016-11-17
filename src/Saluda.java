@@ -13,7 +13,14 @@ public class Saluda {
 	public static void setNombre(String nombre) {
 		Saluda.nombre = "Raquel";/*
 									 ** Metodo que asigna un valor para nombre
+									 *
+									 * 
 									 */
+		pideNombre();/*
+						 * 
+						 * Metodo pide nombre
+						 */
+
 	}
 
 	public static void pideNombre() {
